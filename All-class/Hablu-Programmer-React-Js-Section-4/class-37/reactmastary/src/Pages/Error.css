@@ -1,0 +1,15 @@
+.error-pag{
+    background-color: rgb(193, 189, 69);
+    height: 100vh;
+    padding: 2px;
+}
+.error-text{
+    margin-top: 15%;
+    color: green;
+    font-size: 30px;
+   
+}
+.error404{
+    font-size: 100px;
+    font-weight: bold;
+}

@@ -1,0 +1,167 @@
+/* mobile responsive start ============================================= */
+@media (min-width: 320px) and (max-width: 575.98px) {
+
+  /* body{
+    background-color: blue;
+  } */
+  /* commun css start */
+  .title h2 {
+    font-size: 25px;
+  }
+
+  .title p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  /* commun css end */
+  /* navbar_part_start======== */
+  .navbar-nav {
+    margin-top: 20px;
+    flex-direction: row;
+    list-style: none;
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+
+  .banner_silider {
+    height: 750px;
+  }
+
+  .navbar .collapse .navbar-nav {
+    column-gap: 56px;
+  }
+
+  /* navbar_part_end======== */
+  /* Banner_part_start======== */
+  .banner_part .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 91%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .banner_part .overlay h1 {
+    padding: -1px 0;
+    font-size: 28px;
+  }
+
+  .banner_part .overlay p {
+    font-size: 14px;
+    padding: 0px 5px 20px;
+  }
+
+  /* Banner_part_end======== */
+  /* our_success_start======== */
+  #our_recent_work {
+    background-color: #F3F3F3;
+    padding: 75px 0;
+  }
+  #our_success {
+    text-align: center;
+    padding: 0;
+  }
+
+  #our_success .container {
+    background: #B6C7DA;
+    padding: 85px 37px 86px 50px;
+    border-radius: 0;
+  }
+  #our_success .container .row .right {
+   flex-direction: column;
+  }
+
+  #our_success .container .row .left h2 {
+    font-size: 26px;
+    margin-top: 15px;
+  }
+
+  #our_success .container .row .right .sustomer_satisfied h3 {
+    font-size: 29px;
+    margin-top: 20px;
+  }
+
+  /* our_success_end======== */
+  /* our_provided_services start ========== */
+  #our_provided_services {
+    padding: 69px 0 103px;
+  }
+  /* our_provided_services end ============= */
+  /* choose_agenc start================== */
+
+  #choose_agenc {
+    padding: 60px 0 1px;
+  }
+  #choose_agenc .container .row .innovative_ideas {
+    width: 344px;
+    flex-shrink: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #choose_agenc .container .row .innovative_ideas p {
+    max-width: 300px;
+    margin-bottom: 30px;
+    margin: 0 auto 30px;
+  }
+  #choose_agenc .container .row img {
+    width: 100%;
+    height: auto;
+  }
+  /* choose_agenc end ============================ */
+  /* Some Client Reviews_part_end */
+  /* Some Client Reviews_part_start================ */
+  #reviews_part {
+    padding: 60px 0 62px;
+  }
+  #reviews_part .clent_reviews_part .left_arrow {
+    left: 15px;
+    width: 20px;
+    height: 20px;
+}
+#reviews_part .clent_reviews_part .right_arrow {
+  right: 15px;
+  width: 20px;
+  height: 20px;
+}
+  /* Some Client Reviews_part_end */
+  /* #development_part start================ */
+  #development_part {
+    padding: 1px 0 30px;
+  }
+  #development_part .container .left_part h2 {
+    font-size: 29px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  #development_part .container .left_part p {
+  margin-bottom: 30px;
+  
+  }
+
+  #development_part .container .right_part h3 {
+    font-size: 23px;
+  }
+  /* #development_part end ===================== */
+  /* footer part start ====================== */
+  footer {
+    padding: 46px 0 33px;
+  }
+  footer .container .row {
+    row-gap: 44px;
+    text-align: center;
+  }
+  footer .container .footer_info h4 {
+    margin-bottom: 9px;
+  }
+  footer .container .footer_logo p {
+    margin: 20px  auto 0;
+  }
+  /* footer part end ====================== */
+}
+
+/* mobile responsive end ============================================= */

@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.widthparagrap{
+    width: 800px;
+}
+.copy-text {
+    background: #1d1d2e19;
+    
+}
+.saiful{
+    color: red;
+    font-size: 200px;
+}

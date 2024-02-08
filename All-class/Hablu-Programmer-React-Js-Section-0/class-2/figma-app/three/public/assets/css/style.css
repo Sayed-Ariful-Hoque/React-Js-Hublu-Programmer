@@ -1,0 +1,767 @@
+/* commun_css_part_start======================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+img {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    padding: 0;
+    margin: 0;
+}
+
+.costum-button {
+    border: 1px solid transparent;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    /* 130% */
+    display: inline-flex;
+    padding: 15px 42px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 10px;
+    background: #6A4DF4;
+}
+
+.costum-button:hover {
+    background: transparent;
+    color: #6A4DF4;
+    border-color: #6A4DF4;
+}
+
+.navbar .navbar-brand {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    padding: 0;
+}
+
+/* a i {
+    width: 80px;
+} */
+
+.title {
+    text-align: center;
+}
+
+.title h2 {
+    color: var(--Dark-01, #151515);
+    font-family: Inter;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.title p {
+    color: var(--Dark-03, #737373);
+    /* Paragraph  */
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+    max-width: 609px;
+    margin: 20px auto 0;
+}
+
+
+/* commun_css_part_end======================================================= */
+/* navbar_part_start======================================================= */
+
+.navbar {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    top: 50px;
+
+}
+
+.navbar .collapse .navbar-nav {
+    column-gap: 67px;
+}
+
+.navbar .collapse .navbar-nav .active {
+    color: #4756df;
+    color: #4756DF;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    /* 144.444% */
+}
+
+.navbar .collapse .navbar-nav .nav-item {
+    position: relative;
+}
+
+.navbar .collapse .navbar-nav .nav-item .nav-link:hover {
+    color: #4756df;
+}
+
+.navbar .container .collapse ul li a {
+    color: #9a3939;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+
+/* navbar_part_end======================================================= */
+/* banner_part_start=============================================================================================== */
+.banner_silider {
+    background: url(../imgs/banner-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    padding: 0 0 176px;
+    height: 896px;
+}
+
+.banner_part {
+    position: relative;
+}
+
+.banner_part .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner_part .silider-1 {
+    background: url(../imgs/banner-2.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    padding: 0 0 176px;
+}
+
+.banner_part .silider-2 {
+    background: url(../imgs/banner-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    padding: 0 0 176px;
+}
+
+.banner_part .silider-3 {
+    background: url(../imgs/banner-4.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    padding: 0 0 176px;
+}
+
+
+
+
+.banner_silider::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.60);
+    z-index: -1;
+
+}
+
+.banner_part .overlay {
+    text-align: center;
+    color: #FFF;
+}
+
+.banner_part .overlay h1 {
+    padding: 224px 0 51px;
+    max-width: 950px;
+    margin: 0 auto;
+    font-family: Inter;
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 120%;
+    /* 90px */
+}
+
+.banner_part .overlay p {
+    max-width: 621px;
+    margin: 0 auto;
+    /* Paragraph  */
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+    padding-bottom: 40px;
+}
+
+.banner_part ul {
+    position: absolute;
+    left: 50%;
+    bottom: 53px;
+    transform: translateX(-50%);
+    display: flex;
+    column-gap: 2px;
+    z-index: 99;
+}
+
+.banner_part ul li button {
+    font-size: 0;
+    border-radius: 50%;
+    border: none;
+    background: #4756DF;
+    width: 24px;
+    height: 24px;
+    border: 4px solid transparent;
+}
+
+.banner_part ul .slick-active button {
+    border-color: #FFF;
+
+}
+
+/* banner_part_end=============================================================================================== */
+/* Our Success_part_start=============================================================================================== */
+#our_success {
+    padding: 171px 0 0;
+}
+
+#our_success .container {
+    background: #E0FFF9;
+    padding: 85px 37px 86px 50px;
+    border-radius: 20px;
+}
+
+#our_success .container .row {}
+
+#our_success .container .row .left {
+    margin: 0;
+    padding: 0;
+}
+
+#our_success .container .row .left h4 {
+    color: var(--Primary-Color, #6A4DF4);
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 120%;
+    /* 30px */
+}
+
+#our_success .container .row .left h2 {
+    color: var(--Dark-01, #151515);
+    font-family: Inter;
+    font-size: 35px;
+    font-weight: 600;
+    max-width: 387px;
+    margin-top: 15px;
+}
+
+#our_success .container .row .right {
+    display: flex;
+    justify-content: end;
+    column-gap: 110px;
+    margin-top: 13px 0 0;
+    padding: 0;
+}
+
+#our_success .container .row .right .sustomer_satisfied {}
+
+#our_success .container .row .right .sustomer_satisfied h3 {
+    color: var(--Dark-01, #151515);
+    font-family: Inter;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+#our_success .container .row .right .sustomer_satisfied h3 span {}
+
+#our_success .container .row .right .sustomer_satisfied p {
+    color: var(--Dark-03, #737373);
+    margin-top: 20px;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 120%;
+    /* 24px */
+}
+
+/* Our Success_part_end=============================================================================================== */
+/* Our Provided Services_Start=============================================================================================== */
+#our_provided_services {
+    padding: 149px 0 103px;
+}
+
+#our_provided_services .container .title {
+    margin-bottom: 50px;
+}
+
+#our_provided_services .container .row {
+    row-gap: 24px;
+}
+
+#our_provided_services .container .service {
+    padding: 80px 49px 47px;
+    text-align: center;
+    border-radius: 20px;
+    /* background: #FFF; */
+    background-color: #FFF;
+}
+
+#our_provided_services .container .service:hover {
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
+}
+
+#our_provided_services .container .service img {
+    max-width: 98.664px;
+    height: 80.5px;
+    flex-shrink: 0;
+}
+
+#our_provided_services .container .service h3 {
+    color: var(--Dark-01, #151515);
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 40px 0 20px;
+}
+
+#our_provided_services .container .service p {
+    color: var(--Dark-03, #737373);
+    font-family: Inter;
+    font-size: 16px;
+    max-width: 600px;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+}
+
+/* Our Provided Services_end=============================================================================================== */
+/* Our Recent Work_part_Start=============================================================================================== */
+#our_recent_work {
+    background-color: #F3F3F3;
+    padding: 150px 0;
+}
+
+#our_recent_work .recent_work {
+    background-color: #FFF;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#our_recent_work .row {
+    margin: 106px 0 0;
+    row-gap: 24px;
+}
+
+#our_recent_work .recent_work img {
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+}
+
+#our_recent_work .recent_work .work_info {
+    padding: 30px 42px;
+    text-align: center;
+
+}
+
+#our_recent_work .recent_work .work_info h3 {
+    color: var(--Dark-01, #151515);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+#our_recent_work .recent_work .work_info p {
+    color: var(--Dark-03, #737373);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+    margin-top: 10px;
+}
+
+/* Our Recent Work_part_end=============================================================================================== */
+/* Why You Should Choose Agenc_part_Start=============================================================================================== */
+#choose_agenc {
+    padding: 150px 0 100px;
+}
+
+#choose_agenc .title {
+    margin-bottom: 130px;
+}
+
+#choose_agenc .container .row {}
+
+#choose_agenc .container .row .innovative_ideas {
+    width: 344px;
+    flex-shrink: 0;
+}
+
+#choose_agenc .container .row .innovative_ideas img {
+    width: 55.94px;
+    height: 64px;
+    flex-shrink: 0;
+}
+
+#choose_agenc .container .row .innovative_ideas h3 {
+    color: var(--Dark-01, #151515);
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 20px 0 10px;
+}
+
+#choose_agenc .container .row .innovative_ideas p {
+    color: var(--Dark-03, #737373);
+    /* Paragraph  */
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+}
+
+#choose_agenc .container .row .innovative_second {
+    margin-top: 95px;
+}
+
+#choose_agenc .container .row img {
+    width: 428px;
+    height: 428px;
+    flex-shrink: 0;
+}
+
+/* Why You Should Choose Agenc_part_end=============================================================================================== */
+/* Some Client Reviews_part_end=============================================================================================== */
+
+
+#reviews_part {
+    padding: 106px 0 227px;
+}
+
+#reviews_part .container .title {
+    margin-bottom: 130px;
+}
+
+#reviews_part .clent_reviews_part {
+    position: relative;
+}
+
+#reviews_part .clent_reviews_part .left_arrow {
+    position: absolute;
+    z-index: 99;
+    left: 12px;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #4756DF;
+    color: #FFF;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#reviews_part .clent_reviews_part .right_arrow {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #4756DF;
+    color: #FFF;
+    transform: translateX(50%) translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+
+
+}
+
+#reviews_part .reviews {
+    padding: 54px 58px;
+    max-width: 424px;
+    flex-shrink: 0;
+    transition: .4s;
+    border: 2px solid royalblue;
+    margin: 0 12px;
+    border-radius: 2px;
+}
+
+#reviews_part .reviews:hover {
+    border-radius: 30px;
+    background: #F4EFEF;
+}
+
+#reviews_part .reviews .quote {
+    max-width: 58px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+#reviews_part .reviews .review_pragrap {
+    color: var(--Dark-03, #7B7B7B);
+    font-family: Inter;
+    font-size: 16px;
+    margin: 20px 0;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+}
+
+#reviews_part .reviews ul {
+    display: flex;
+    margin-bottom: 32px;
+}
+
+#reviews_part .reviews ul li {
+    margin-left: 5px;
+    color: #F9BD2C;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+#reviews_part .reviews .calient_info {
+    display: flex;
+}
+
+#reviews_part .reviews .calient_info img {
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+}
+
+#reviews_part .reviews .calient_info .client_text {
+    margin-left: 20px;
+}
+
+#reviews_part .reviews .calient_info .client_text h4 {
+    color: var(--Dark-01, #232323);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 120%;
+    /* 24px */
+}
+
+#reviews_part .reviews .calient_info .client_text p {
+    color: var(--Dark-03, #7B7B7B);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+}
+
+/* Some Client Reviews_part_end=============================================================================================== */
+/* We Do design, Code & Development_part_end=============================================================================================== */
+#development_part {
+    padding: 150px 0;
+    background: #F3F3F3;
+}
+
+#development_part .container {}
+
+#development_part .container .left_part {
+    margin-top: 177px;
+}
+
+#development_part .container .left_part h2 {
+    max-width: 470px;
+    color: var(--Dark-01, #151515);
+    font-family: Inter;
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#development_part .container .left_part p {
+    max-width: 526px;
+    color: var(--Dark-03, #737373);
+    /* Paragraph  */
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+}
+
+#development_part .container .left_part .development_left_pragrap {
+    margin-top: 10px;
+}
+
+#development_part .container .right_part {
+    max-width: 536px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FFF;
+    padding: 61px 43px;
+}
+
+#development_part .container .right_part h3 {
+    color: var(--Dark-01, #151515);
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+#development_part .container .right_part .form-label {
+    color: var(--Dark-01, #151515);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    /* 162.5% */
+}
+
+#development_part .container .right_part .form-control {
+    max-width: 450px;
+    height: 64px;
+    border-radius: 10px;
+    border: 1px solid var(--Dark-06, #E8E8E8);
+    margin-bottom: 20px;
+}
+
+#development_part .container .right_part button {
+    max-width: 450px;
+    border-radius: 10px;
+    margin: 30px auto 0;
+    display: block;
+}
+
+/* We Do design, Code & Development_part_end=============================================================================================== */
+/* footer_part_start=============================================================================================== */
+footer {
+    padding: 150px 0 33px;
+}
+
+footer .container .row {
+    row-gap: 132px;
+}
+
+footer .container .footer_logo img {
+    max-width: 166.12px;
+}
+
+footer .container .footer_logo p {
+    color: var(--Dark-03, #7B7B7B);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+    max-width: 356px;
+    margin-top: 30px;
+}
+
+footer .container .footer_info h4 {
+    color: var(--Dark-01, #151515);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 40px;
+}
+
+footer .container .footer_info a {
+    display: block;
+    color: var(--Dark-03, #7B7B7B);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    /* 250% */
+}
+
+footer .container hr {
+    margin: 50px 0 33px;
+    background: #E8E8E8;
+}
+
+footer .container .copy_right {
+    text-align: center;
+    color: var(--Dark-05, #D0D0D0);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+}
+ #socile_part ul{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+   
+
+}
+#socile_part ul li{
+    padding: 20px;
+    color: royalblue;
+    font-size: 30px;
+}
+
+/* footer_part_end=============================================================================================== */

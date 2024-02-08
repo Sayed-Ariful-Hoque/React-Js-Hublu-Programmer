@@ -1,0 +1,16 @@
+.modulecss {
+    text-align: center;
+    background-color: cornflowerblue;
+    padding: 50px;
+    color: white;
+}
+.ariful{
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    display: block;
+    margin: 0 auto;
+}
